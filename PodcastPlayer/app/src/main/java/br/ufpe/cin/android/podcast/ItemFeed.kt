@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName="itemsFeed")
-data class ItemFeed(@PrimaryKey val title: String, val link: String, val pubDate: String, val description: String, val downloadLink: String) {
+data class ItemFeed(@PrimaryKey val title: String, val link: String, val pubDate: String, val description: String, val downloadLink: String, var location: String? = null) {
 
     override fun toString(): String {
         return title

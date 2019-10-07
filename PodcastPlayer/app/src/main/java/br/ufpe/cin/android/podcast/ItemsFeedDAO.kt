@@ -12,6 +12,6 @@ interface ItemsFeedDAO {
     fun removerItem(vararg itemFeed:ItemFeed)
     @Query("SELECT * FROM itemsFeed")
     fun todosItems() : List<ItemFeed>
-    @Query("SELECT * FROM itemsFeed WHERE pubDate LIKE :q")
-    fun buscaItemPelaData(q : String) : List<ItemFeed>
+    @Query("SELECT * FROM itemsFeed WHERE title LIKE :q")
+    fun buscaItemPeloTitulo(q : String) : ItemFeed
 }
