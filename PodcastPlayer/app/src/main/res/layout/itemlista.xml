@@ -21,10 +21,16 @@
             android:layout_weight="2"
             android:text="@string/action_download" />
         <ImageButton
-            android:id="@+id/item_play"
+            android:id="@+id/botaoPlay"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/play"/>
+        <Button
+            android:id="@+id/botaoPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="P" />
 
     </LinearLayout>
 
